@@ -156,3 +156,59 @@ Nettie King@Nettie-Win MINGW64 ~/Farida (dev)
 $ git branch
 * dev
   main
+
+  
+Exercise 2
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ ls
+doc.css  file.txt  home.hmtl  index.html  README.md
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ rm home.hmtl
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ touch home.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git stash
+No local changes to save
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git stash -u
+Saved working directory and index state WIP on main: d32d6fd First commit
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ touch about.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git stash -u
+Saved working directory and index state WIP on main: d32d6fd First commit
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ touch team.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git stash -u
+Saved working directory and index state WIP on main: d32d6fd First commit
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git stash list
+stash@{0}: WIP on main: d32d6fd First commit
+stash@{1}: WIP on main: d32d6fd First commit
+stash@{2}: WIP on main: d32d6fd First commit
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git stash pop
+Already up to date.
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+Dropped refs/stash@{0} (e72ff63c44f4cb3dab93de77e66372411ce4384a)
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git stash list
+stash@{0}: WIP on main: d32d6fd First commit
+stash@{1}: WIP on main: d32d6fd First commit
