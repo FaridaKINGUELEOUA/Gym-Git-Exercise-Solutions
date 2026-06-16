@@ -97,3 +97,62 @@ fatal: unable to access 'https://github.com/FaridaKINGUELEOUA/Gym-Git-Exercise-S
 Nettie King@Nettie-Win MINGW64 ~/Farida (main)
 $ git pull origin main --rebase
 fatal: unable to access 'https://github.com/FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git/': Recv failure: Connection was reset
+Nettie King@Nettie-Win MINGW64 ~
+$ cd ~/Farida
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git pull origin main --rebase
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (6/6), 2.58 KiB | 125.00 KiB/s, done.
+From https://github.com/FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+Successfully rebased and updated refs/heads/main.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git branch dev
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git branch
+  dev
+* main
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git switch dev
+Switched to branch 'dev'
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (dev)
+$ git branch test
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (dev)
+$ git branch -d test
+Deleted branch test (was d32d6fd).
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (dev)
+$ git branch
+* dev
+  main
