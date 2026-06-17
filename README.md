@@ -212,3 +212,62 @@ Nettie King@Nettie-Win MINGW64 ~/Farida (main)
 $ git stash list
 stash@{0}: WIP on main: d32d6fd First commit
 stash@{1}: WIP on main: d32d6fd First commit
+
+
+Exercise1-Bundle2
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git remote -v
+origin  https://github.com/FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git (push)
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git log --onelin e
+fatal: ambiguous argument 'e': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git log --oneline
+892ae14 (HEAD -> main, origin/main, origin/HEAD) Changes
+3a6153d First commit
+91b2e48 Update README.md
+400e0d0 Update README.md
+c208118 Update README.md
+ca49b53 Initial commit
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git branch ft/bundle-2
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ touch service.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git add service.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git commit -m "Updated with a new file"
+[main 8601b6e] Updated with a new file
+ 1 file changed, 11 insertions(+)
+ create mode 100644 service.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git branch
+  dev
+  ft/bundle-2
+* main
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects:  Counting objects:  Counting objects:  Counting objects: 1Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objectsCompressing objectsCompressing objectsCompressing objects: 100% (3/3), done.
+Writing objects:  3Writing objects:  6Writing objects: 10Writing objects: 100% (3/3), 439 bytes | 439.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving dremote: Resolving dremote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
+   892ae14..8601b6e  main -> main
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git push origin
+Everything up-to-date
