@@ -1,5 +1,5 @@
 # Gym-Git-Exercise-Solutions
-
+```bash
 Nettie King@Nettie-Win MINGW64 ~
 $ mkdir Farida
 
@@ -271,3 +271,4 @@ To https://github.com/FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
 Nettie King@Nettie-Win MINGW64 ~/Farida (main)
 $ git push origin
 Everything up-to-date
+```
