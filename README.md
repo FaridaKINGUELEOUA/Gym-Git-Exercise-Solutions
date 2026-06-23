@@ -1,5 +1,6 @@
 # Gym-Git-Exercise-Solutions
 ```bash
+Exercie 1-Bundle 1
 Nettie King@Nettie-Win MINGW64 ~
 $ mkdir Farida
 
@@ -158,7 +159,7 @@ $ git branch
   main
 
   
-Exercise 2
+Exercise 2-Bundle 1
 Nettie King@Nettie-Win MINGW64 ~/Farida (main)
 $ ls
 doc.css  file.txt  home.hmtl  index.html  README.md
@@ -212,6 +213,10 @@ Nettie King@Nettie-Win MINGW64 ~/Farida (main)
 $ git stash list
 stash@{0}: WIP on main: d32d6fd First commit
 stash@{1}: WIP on main: d32d6fd First commit
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git reset --hard HEAD~1
+HEAD is now at 892ae14 Changes
 
 
 Exercise1-Bundle2
