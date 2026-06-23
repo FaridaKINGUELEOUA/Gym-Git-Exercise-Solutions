@@ -276,4 +276,31 @@ To https://github.com/FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
 Nettie King@Nettie-Win MINGW64 ~/Farida (main)
 $ git push origin
 Everything up-to-date
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/bundle-2)
+$ touch services.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/bundle-2)
+$ code services.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/bundle-2)
+$ git add services.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/bundle-2)
+$ git commit -m "Add services"
+[ft/bundle-2 fa45bf3] Add services
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/bundle-2)
+$ git push -u origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 435 bytes | 435.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
+   892ae14..fa45bf3  ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 ```
