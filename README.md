@@ -467,4 +467,235 @@ Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
    09c7a55..a0ed3cf  ft/service-redesign -> ft/service-redesign
+
+Exercise 2
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/faq-page)
+$ touch faq.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/faq-page)
+$ code faq.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/faq-page)
+$ git add faq.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/faq-page)
+$ git push -u origin ft/faq-page
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions/pull/new/ft/faq-page
+remote: 
+To github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/faq-page)
+$ git commit -m "Add fq page"
+[ft/faq-page 7dfe739] Add fq page
+ 2 files changed, 22 insertions(+)
+ create mode 100644 contact.html
+ create mode 100644 faq.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/faq-page)
+$ git push -u origin ft/faq-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 516 bytes | 516.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
+   a97ec60..7dfe739  ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/faq-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/team-page)
+$ git revert 7163c89
+hint: Waiting for your editor to close
+[ft/team-page a500efc] Revert "Create my team"
+ 1 file changed, 11 deletions(-)
+ delete mode 100644 team2.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 3, done.
+Counting objects:  Counting objects:  Counting objects: 1Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objectsCompressing objectsCompressing objects: 100% (2/2), done.
+Writing objects:  5Writing objects: 10Writing objects: 100% (2/2), 256 bytes | 256.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving dremote: Resolving dremote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
+   7163c89..a500efc  ft/team-page -> ft/team-page
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/team-page)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/faq-page)
+$ git branch ft/home-page-redesign
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/faq-page)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ ls
+doc.css
+file.txt
+home.html
+index.html
+README.md
+service.html
+services.html
+team.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ code index.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git add index.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git commit -m "Update on main"
+[main 36bb776] Update on main
+ 1 file changed, 11 insertions(+)
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git push
+To github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/team-page)
+$ git pull --rebase origin ft/team-page
+From github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions
+ * branch            ft/team-page -> FETCH_HEAD
+Already up to date.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/team-page)
+$ git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting obremote: Counting obremote: Counting obremote: Counting obremote: Counting obremote: Counting objects: 100% (5/5), done.
+remote: Compressing objects:  33% (1/3remote: Compressing objects:  66% (2/3remote: Compressing objects: 100% (3/3remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: Unpacking objects: Unpacking objects: Unpacking objects: 100% (3/3), 2.19 KiB | 77.00 KiB/s, done.
+From github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+   fa570b5..f98afce  main       -> origin/main
+hint: Waiting for your editor to close
+Merge made by the 'ort' strategy.
+ README.md | 164 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 164 insertions(+)
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git push origin main
+Enumerating objects: 9, done.
+Counting objects:  Counting objects:  Counting objects:  Counting objects:  Counting objects:  Counting objects:  Counting objects:  Counting objects: 1Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objectsCompressing objectsCompressing objectsCompressing objectsCompressing objectsCompressing objects: 100% (5/5), done.
+Writing objects:  2Writing objects:  4Writing objects:  6Writing objects:  8Writing objects: 10Writing objects: 100% (5/5), 734 bytes | 183.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving dremote: Resolving dremote: Resolving dremote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
+   f98afce..ee06483  main -> main
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git switch ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/home-page-redesign)
+$ ls
+contact.html
+doc.css
+faq.html
+file.txt
+home.html
+index.html
+README.md
+service.html
+services.html
+team.html
+team2.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/home-page-redesign)
+$ touch home2.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/home-page-redesign)
+$ code home2.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/home-page-redesign)
+$ git add home2.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/home-page-redesign)
+$ git commit -m "Up
+date home page"
+[ft/home-page-redesign 3315f1b] Update home page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 home2.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/home-page-redesign)
+$ git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 11, done.
+Counting objects:  Counting objects:  Counting objects:  Counting objects:  Counting objects:  Counting objects:  Counting objects:  Counting objects:  Counting objects:  Counting objects:  Counting objects: 1Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objectsCompressing objectsCompressing objectsCompressing objectsCompressing objectsCompressing objectsCompressing objectsCompressing objectsCompressing objectsCompressing objectsCompressing objects: 100% (10/10), done.
+Writing objects:  1Writing objects:  2Writing objects:  3Writing objects:  4Writing objects:  5Writing objects:  6Writing objects:  7Writing objects:  8Writing objects:  9Writing objects: 10Writing objects: 100% (10/10), 1.04 KiB | 118.00 KiB/s, done.
+Total 10 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving dremote: Resolving dremote: Resolving dremote: Resolving dremote: Resolving dremote: Resolving dremote: Resolving dremote: Resolving deltas: 100% (6/6), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote: 
+To github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 ```
