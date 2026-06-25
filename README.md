@@ -303,4 +303,168 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
    892ae14..fa45bf3  ft/bundle-2 -> ft/bundle-2
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+Exercise2-Bundle 2
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/bundle-2)
+$ git switch main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git pull origin main
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 14 (delta 9), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (14/14), 5.42 KiB | 75.00 KiB/s, done.
+From github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+   8601b6e..56bfa7d  main       -> origin/main
+Updating 892ae14..56bfa7d
+Fast-forward
+ README.md     | 96 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ service.html  | 11 +++++++
+ services.html | 11 +++++++
+ 3 files changed, 116 insertions(+), 2 deletions(-)
+ create mode 100644 service.html
+ create mode 100644 services.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/service-redesign)
+$ git add service.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/service-redesign)
+$ git commit -m "Update in services"
+On branch ft/service-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/service-redesign)
+$ git add services.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/service-redesign)
+$ git commit -m "Update in services"
+[ft/service-redesign 09c7a55] Update in services
+ 1 file changed, 1 insertion(+)
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/service-redesign)
+$ git push -u origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 346 bytes | 346.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions/pull/new/ft/service-redesign
+remote: 
+To github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/service-redesign)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git add services.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git commit -m "Update on main branch"
+[main fa570b5] Update on main branch
+ 1 file changed, 1 insertion(+)
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 334 bytes | 334.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
+   56bfa7d..fa570b5  main -> main
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (main)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/service-redesign)
+$ git diff main
+diff --git a/services.html b/services.html
+index 281e44d..507aa7f 100644
+--- a/services.html
++++ b/services.html
+@@ -7,6 +7,6 @@
+ </head>
+ <body>
+     <p>Some content added</p>
+-    <h1>Update in main</h1>
++    <h1>Our services are available.</h1>
+ </body>
+ </html>
+\ No newline at end of file
+(END)
+diff --git a/services.html b/services.html
+index 281e44d..507aa7f 100644
+--- a/services.html
++++ b/services.html
+@@ -7,6 +7,6 @@
+ </head>
+ <body>
+     <p>Some content added</p>
+-    <h1>Update in main</h1>
++    <h1>Our services are available.</h1>
+ </body>
+ </html>
+\ No newline at end of file
+(END)
++++ b/services.html
+@@ -7,6 +7,6 @@
+ </head>
+ <body>
+     <p>Some content added</p>
+-    <h1>Update in main</h1>
++    <h1>Our services are available.</h1>
+ </body>
+ </html>
+\ No newline at end of file
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/service-redesign)
+$ git merge main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/service-redesign|MERGING)
+$ git add services.html
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/service-redesign|MERGING)
+$ git commit -m "Resolve conflicts"
+[ft/service-redesign a0ed3cf] Resolve conflicts
+
+Nettie King@Nettie-Win MINGW64 ~/Farida (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 356 bytes | 356.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:FaridaKINGUELEOUA/Gym-Git-Exercise-Solutions.git
+   09c7a55..a0ed3cf  ft/service-redesign -> ft/service-redesign
 ```
